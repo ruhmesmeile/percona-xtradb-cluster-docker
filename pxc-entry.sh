@@ -117,7 +117,7 @@ function join { local IFS="$1"; shift; echo "$*"; }
 set +e
 
 ipaddr=$(hostname -i | awk ' { print $1 } ')
-hostname=$(hostname)
+hostname=$NODE_NAME
 
 curl --key /etc/docker/ssl/calculonc-key.pem --cert /etc/docker/ssl/calculonc.pem --cacert /etc/docker/ssl/ca.pem https://$DISCOVERY_SERVICE/v2/keys/pxc-cluster/queue/$CLUSTER_NAME -XPOST -d value=$ipaddr -d ttl=60
 

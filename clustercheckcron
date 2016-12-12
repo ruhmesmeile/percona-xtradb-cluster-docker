@@ -44,7 +44,7 @@ else
 fi
 
 ipaddr=$(hostname -i | awk ' { print $1 } ')
-hostname=$(hostname)
+hostname=$NODE_NAME
 
 while true
 do
