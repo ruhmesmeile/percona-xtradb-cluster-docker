@@ -38,7 +38,7 @@ collation-server=utf8_general_ci
 key_buffer_size                 = 200M
 query_cache_size                = 100M
 
-innodb_buffer_pool_size         = 250M
+innodb_buffer_pool_size         = 4G
 innodb_log_buffer_size          = 10M
 
 tmp_table_size      = 200M
