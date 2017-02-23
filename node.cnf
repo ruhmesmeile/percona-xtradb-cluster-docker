@@ -82,7 +82,7 @@ long_query_time     = 1
 ## - prevent swapping here -
 
 max_connections    = 20
-max_allowed_packet = 16M
+max_allowed_packet = 256M
 
 
 #################################################
